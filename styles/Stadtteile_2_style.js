@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_datay5TQa_3 = function(feature, resolution){
+var style_Stadtteile_2 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -21,8 +21,7 @@ var style_datay5TQa_3 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 2.560000000000002 + size,
-            displacement: [0, 0],  fill: new ol.style.Fill({color: 'rgba(246,94,10,1.0)'})}),
+        stroke: new ol.style.Stroke({color: 'rgba(56,56,56,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
